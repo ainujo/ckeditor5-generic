@@ -27,6 +27,7 @@ import { List } from '@ckeditor/ckeditor5-list';
 import { MediaEmbed } from '@ckeditor/ckeditor5-media-embed';
 import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
 import { RemoveFormat } from '@ckeditor/ckeditor5-remove-format';
+import { SourceEditing } from '@ckeditor/ckeditor5-source-editing';
 import { Table, TableCaption, TableCellProperties, TableToolbar } from '@ckeditor/ckeditor5-table';
 import { Undo } from '@ckeditor/ckeditor5-undo';
 
@@ -57,6 +58,7 @@ class Editor extends ClassicEditor {
 		MediaEmbed,
 		Paragraph,
 		RemoveFormat,
+		SourceEditing,
 		Strikethrough,
 		Table,
 		TableCaption,
@@ -94,7 +96,9 @@ class Editor extends ClassicEditor {
 				'blockQuote',
 				'indent',
 				'outdent',
-				'horizontalLine'
+				'horizontalLine',
+				'|',
+				'sourceEditing'
 			]
 		},
 		language: 'en',
