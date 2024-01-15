@@ -24,8 +24,7 @@
     "@ckeditor/ckeditor5-paragraph": "40.2.0",
     "@ckeditor/ckeditor5-remove-format": "40.2.0",
     "@ckeditor/ckeditor5-table": "40.2.0",
-    "@ckeditor/ckeditor5-undo": "40.2.0",
-    "@ckeditor/ckeditor5-upload": "40.2.0"
+    "@ckeditor/ckeditor5-undo": "40.2.0"
   },
   "devDependencies": {
     "@ckeditor/ckeditor5-core": "^40.2.0",

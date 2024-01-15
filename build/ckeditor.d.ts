@@ -20,9 +20,8 @@ import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
 import { RemoveFormat } from '@ckeditor/ckeditor5-remove-format';
 import { Table, TableCaption, TableCellProperties, TableToolbar } from '@ckeditor/ckeditor5-table';
 import { Undo } from '@ckeditor/ckeditor5-undo';
-import { Base64UploadAdapter } from '@ckeditor/ckeditor5-upload';
 declare class Editor extends ClassicEditor {
-    static builtinPlugins: (typeof Alignment | typeof Base64UploadAdapter | typeof BlockQuote | typeof Bold | typeof Essentials | typeof FontBackgroundColor | typeof FontColor | typeof FontSize | typeof Heading | typeof HorizontalLine | typeof Image | typeof ImageCaption | typeof ImageResize | typeof ImageStyle | typeof ImageToolbar | typeof ImageUpload | typeof Indent | typeof Italic | typeof Link | typeof List | typeof MediaEmbed | typeof Paragraph | typeof RemoveFormat | typeof Strikethrough | typeof Table | typeof TableCaption | typeof TableCellProperties | typeof TableToolbar | typeof Underline | typeof Undo)[];
+    static builtinPlugins: (typeof Alignment | typeof BlockQuote | typeof Bold | typeof Essentials | typeof FontBackgroundColor | typeof FontColor | typeof FontSize | typeof Heading | typeof HorizontalLine | typeof Image | typeof ImageCaption | typeof ImageResize | typeof ImageStyle | typeof ImageToolbar | typeof ImageUpload | typeof Indent | typeof Italic | typeof Link | typeof List | typeof MediaEmbed | typeof Paragraph | typeof RemoveFormat | typeof Strikethrough | typeof Table | typeof TableCaption | typeof TableCellProperties | typeof TableToolbar | typeof Underline | typeof Undo)[];
     static defaultConfig: EditorConfig;
 }
 export default Editor;
