@@ -71,7 +71,6 @@ class Editor extends ClassicEditor {
 			items: [
 				'undo',
 				'redo',
-				'|',
 				'heading',
 				'|',
 				'bold',
@@ -91,8 +90,8 @@ class Editor extends ClassicEditor {
 				'|',
 				'bulletedList',
 				'numberedList',
-				'blockQuote',
 				'alignment',
+				'blockQuote',
 				'indent',
 				'outdent',
 				'horizontalLine'
