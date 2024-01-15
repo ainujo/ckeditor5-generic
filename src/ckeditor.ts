@@ -13,14 +13,21 @@ import { Essentials } from '@ckeditor/ckeditor5-essentials';
 import { FontBackgroundColor, FontColor, FontSize } from '@ckeditor/ckeditor5-font';
 import { Heading } from '@ckeditor/ckeditor5-heading';
 import { HorizontalLine } from '@ckeditor/ckeditor5-horizontal-line';
-import { Image, ImageUpload } from '@ckeditor/ckeditor5-image';
+import {
+	Image,
+	ImageCaption,
+	ImageResize,
+	ImageStyle,
+	ImageToolbar,
+	ImageUpload
+} from '@ckeditor/ckeditor5-image';
 import { Indent } from '@ckeditor/ckeditor5-indent';
 import { Link } from '@ckeditor/ckeditor5-link';
 import { List } from '@ckeditor/ckeditor5-list';
 import { MediaEmbed } from '@ckeditor/ckeditor5-media-embed';
 import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
 import { RemoveFormat } from '@ckeditor/ckeditor5-remove-format';
-import { Table } from '@ckeditor/ckeditor5-table';
+import { Table, TableCaption, TableCellProperties, TableToolbar } from '@ckeditor/ckeditor5-table';
 import { Undo } from '@ckeditor/ckeditor5-undo';
 import { Base64UploadAdapter } from '@ckeditor/ckeditor5-upload';
 
@@ -40,6 +47,10 @@ class Editor extends ClassicEditor {
 		Heading,
 		HorizontalLine,
 		Image,
+		ImageCaption,
+		ImageResize,
+		ImageStyle,
+		ImageToolbar,
 		ImageUpload,
 		Indent,
 		Italic,
@@ -50,6 +61,9 @@ class Editor extends ClassicEditor {
 		RemoveFormat,
 		Strikethrough,
 		Table,
+		TableCaption,
+		TableCellProperties,
+		TableToolbar,
 		Underline,
 		Undo
 	];
@@ -86,7 +100,24 @@ class Editor extends ClassicEditor {
 				'horizontalLine'
 			]
 		},
-		language: 'en'
+		language: 'en',
+		image: {
+			toolbar: [
+				'imageTextAlternative',
+				'toggleImageCaption',
+				'imageStyle:inline',
+				'imageStyle:block',
+				'imageStyle:side'
+			]
+		},
+		table: {
+			contentToolbar: [
+				'tableColumn',
+				'tableRow',
+				'mergeTableCells',
+				'tableCellProperties'
+			]
+		}
 	};
 }
 
