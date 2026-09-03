@@ -1,7 +1,7 @@
 {
   "name": "@ainujo/ckeditor5-generic",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "access": "public"
   },
   "author": "CKSource",
   "description": "A custom CKEditor 5 build made by the CKEditor 5 online builder.",
